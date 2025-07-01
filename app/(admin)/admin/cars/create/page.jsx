@@ -1,5 +1,7 @@
 import React from 'react'
-import { AddCarForm } from './add-car-form';
+import { AddCarForm } from '../_components/add-car-form';
+
+
 
 
 export const metadata = {
