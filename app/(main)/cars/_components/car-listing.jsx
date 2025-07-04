@@ -21,7 +21,8 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import CarListingsLoading from "./car-listings-loading";
-import CarCard from "@/components/CarCard";
+import { CarCard } from "@/components/CarCard";
+
 
 export function CarListings() {
   const searchParams = useSearchParams();
