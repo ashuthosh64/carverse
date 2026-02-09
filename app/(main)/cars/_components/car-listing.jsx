@@ -184,7 +184,7 @@ export function CarListings() {
             e.preventDefault();
             handlePageChange(pageNumber);
           }}
-        >
+       >
           {pageNumber}
         </PaginationLink>
       </PaginationItem>

@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function TestDrivesPage() {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-6">Test Drive Management</h1>
+    <div className="p-6 bg-[#B8B2A7]">
+      <h1 className="text-2xl font-bold mb-6 text-black">Test Drive Management</h1>
       <TestDrivesList />
     </div>
   );

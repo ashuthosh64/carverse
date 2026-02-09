@@ -36,14 +36,14 @@ export const Sidebar = () => {
   return (
     <>
       {/* Desktop Sidebar */}
-      <div className="hidden md:flex h-full flex-col overflow-y-auto bg-white shadow-sm border-r">
+      <div className="hidden md:flex h-full flex-col overflow-y-auto bg-[#B8B2A7] text-black shadow-sm border-r">
           {routes.map((route) => {
             return(
             <Link
               key={route.href}
               href={route.href}
               className={cn(
-                "flex items-center gap-x-2 text-slate-500 text-sm font-medium pl-6 transition-all hover:text-slate-600 hover:bg-slate-100/50",
+                "flex items-center gap-x-2  bg-[#B8B2A7] text-black text-sm font-medium pl-6 transition-all hover:text-slate-600 hover:bg-slate-100/50",
                 pathname === route.href
                   ? "text-blue-700 bg-blue-100/50 hover:bg-blue-100 hover:text-blue-700"
                   : "",

@@ -22,7 +22,7 @@ export async function processCarImagewithAI(file) {
     }
 
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
 
     const base64Image = await fileToBase64(file);
 
@@ -42,7 +42,7 @@ export async function processCarImagewithAI(file) {
       5. Body type (SUV, Sedan, Hatchback, etc.)
       6. Mileage
       7. Fuel type (your best guess)
-      8. Transmission type (your best guess)
+      8. Transmission type (your best guess in rupees)
       9. Price (your best guess)
       10. Short Description as to be added to a car listing
 

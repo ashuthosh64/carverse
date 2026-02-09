@@ -154,15 +154,15 @@ const CarsList = () => {
   return (
     <div className="space-y-4">
       {/* Actions and Search */}
-      <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+      <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between bg-[#B8B2A7]">
       <Button onClick={() => router.push("/admin/cars/create")} className="flex items-center">
           <Plus className="h-4 w-4" />
           Add Car
         </Button>
 
-        <form onSubmit={handleSearchSubmit} className="flex w-full sm:w-auto">
+        <form onSubmit={handleSearchSubmit} className="flex w-full sm:w-auto bg-[#B8B2A7]">
           <div className="relative flex-1">
-            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-gray-500" />
+            <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-black"/>
             <Input
               type="search"
               placeholder="Search cars..."
@@ -181,7 +181,7 @@ const CarsList = () => {
               <Loader2 className="h-8 w-8 animate-spin text-gray-400" />
             </div>
           ) : carsData?.success && carsData.data.length > 0 ? (
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto ">
               <Table>
                 <TableHeader>
                   <TableRow>
@@ -303,7 +303,7 @@ const CarsList = () => {
               </Table>
             </div>
           ) : (
-            <div className="flex flex-col items-center justify-center py-12 px-4 text-center">
+            <div className="flex flex-col items-center justify-center py-12 px-4 text-center ">
               <CarIcon className="h-12 w-12 text-gray-300 mb-4" />
               <h3 className="text-lg font-medium text-gray-900 mb-1">
                 No cars found

@@ -9,8 +9,8 @@ export const metadata = {
 
 export default function SettingsPage() {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-6">Settings</h1>
+    <div className="p-6 bg-[#B8B2A7]">
+      <h1 className="text-2xl font-bold mb-6 text-black">Settings</h1>
       <SettingsForm/>
     </div>
   );

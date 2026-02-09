@@ -189,7 +189,7 @@ export function CarDetails({ car, testDriveInfo }) {
             <Badge className="mb-2">{car.bodyType}</Badge>
           </div>
 
-          <h1 className="text-4xl font-bold mb-1">
+          <h1 className="text-4xl font-bold mb-1 text-white">
             {car.year} {car.make} {car.model}
           </h1>
 
@@ -198,7 +198,7 @@ export function CarDetails({ car, testDriveInfo }) {
           </div>
 
           {/* Quick Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 my-6 text-white">
             <div className="flex items-center gap-2">
               <Gauge className="text-gray-500 h-5 w-5" />
               <span>{car.mileage.toLocaleString()} miles</span>
@@ -290,7 +290,7 @@ export function CarDetails({ car, testDriveInfo }) {
       </div>
 
       {/* Details & Features Section */}
-      <div className="mt-12 p-6 bg-white rounded-lg shadow-sm">
+      <div className="mt-12 p-6 bg-white rounded-lg shadow-sm text-black">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-6">Description</h3>
@@ -386,7 +386,7 @@ export function CarDetails({ car, testDriveInfo }) {
             <div className="flex items-start gap-3">
               <LocateFixed className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-medium">Vehiql Motors</h4>
+                <h4 className="font-medium">Volkswagen Palace Cross Bangalore</h4>
                 <p className="text-gray-600">
                   {testDriveInfo.dealership?.address || "Not Available"}
                 </p>

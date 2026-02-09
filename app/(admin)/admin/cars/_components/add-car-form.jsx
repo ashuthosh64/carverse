@@ -272,7 +272,7 @@ export const AddCarForm = () => {
       onValueChange={setActiveTab}
       className="mt-6"
     >
-      <TabsList className="grid w-full grid-cols-2">
+      <TabsList className="grid w-full grid-cols-2 ">
         <TabsTrigger value="manual">Manual Entry</TabsTrigger>
         <TabsTrigger value="ai">AI Upload</TabsTrigger>
       </TabsList>
@@ -333,7 +333,7 @@ export const AddCarForm = () => {
 
                 {/* Price */}
                 <div className="space-y-2">
-                  <Label htmlFor="price">Price ($)</Label>
+                  <Label htmlFor="price">Price (₹)</Label>
                   <Input
                     id="price"
                     {...register("price")}

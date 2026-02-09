@@ -8,8 +8,10 @@ export const metadata = {
 
 export default function CarsPage() {
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-6">Cars Management</h1>
+    <div className="p-6 bg-[#B8B2A7]">
+      <h1 className="text-2xl font-bold text-black">
+  Cars Management</h1>
+
       <CarsList />
     </div>
   );

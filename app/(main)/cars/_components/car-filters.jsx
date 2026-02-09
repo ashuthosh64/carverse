@@ -236,7 +236,7 @@ export const CarFilters = ({ filters }) => {
           setTimeout(() => applyFilters(), 0);
         }}
       >
-        <SelectTrigger className="w-[180px] lg:w-full">
+        <SelectTrigger className="w-[180px] lg:w-full backdrop-blur-2xl bg-white">
           <SelectValue placeholder="Sort by" />
         </SelectTrigger>
         <SelectContent>
